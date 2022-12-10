@@ -21,13 +21,18 @@ const LowerContainer = styled.div`
   align-items: center;
   padding: 0 10px;
   box-sizing: border-box;
-
 `;
-const BadgeComponent = ({badgeName}) => {
+const BadgeText = styled.h3`
+  font-size: 16px;
+  font-weight: 600;
+`;
+const BadgeComponent = ({ badgeName }) => {
   return (
     <BadgeContainer>
       <UpperContainer></UpperContainer>
-      <LowerContainer>{badgeName}</LowerContainer>
+      <LowerContainer>
+        <BadgeText>{badgeName}</BadgeText>
+      </LowerContainer>
     </BadgeContainer>
   );
 };

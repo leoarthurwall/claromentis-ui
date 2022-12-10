@@ -1,22 +1,34 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const MainContainer = styled.main`
-    Width: 100%;
-    height: 100%;
-    padding: 10px;
-`
-const BadgesSection = styled.section``
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  border: 1px solid red;
+  box-sizing: border-box;
 
-const ProfileSection = styled.section``
+`;
+const BadgesSection = styled.section`
+  height: 100%;
+  width: 75%;
+  background-color: grey;
+`;
+
+const ProfileSection = styled.section`
+  height: 100%;
+  width: 25%;
+  background-color: blue;
+`;
 
 const Main = () => {
   return (
     <MainContainer>
-        <BadgesSection></BadgesSection>
-        <ProfileSection></ProfileSection>
+      <BadgesSection>badge</BadgesSection>
+      <ProfileSection>profile</ProfileSection>
     </MainContainer>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;

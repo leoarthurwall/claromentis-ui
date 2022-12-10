@@ -16,11 +16,11 @@ const BadgeContainer = styled.section`
 const BadgeSection = () => {
   return (
     <BadgeContainer>
-        <BadgeComponent />
-        <BadgeComponent />
-        <BadgeComponent />
-        <BadgeComponent />
-        <BadgeComponent />
+        <BadgeComponent badgeName={"Sales Superstar"}/>
+        <BadgeComponent badgeName={"Customer Champion"}/>
+        <BadgeComponent badgeName={"Creative Thinker"}/>
+        <BadgeComponent badgeName={"Content Crafter"}/>
+        <BadgeComponent badgeName={"Tech Trailblazer"}/>
     </BadgeContainer>
   );
 };

@@ -23,11 +23,11 @@ const LowerContainer = styled.div`
   box-sizing: border-box;
 
 `;
-const BadgeComponent = () => {
+const BadgeComponent = ({badgeName}) => {
   return (
     <BadgeContainer>
       <UpperContainer></UpperContainer>
-      <LowerContainer>SuperStar</LowerContainer>
+      <LowerContainer>{badgeName}</LowerContainer>
     </BadgeContainer>
   );
 };

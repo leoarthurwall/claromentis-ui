@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Header from "./Components/Header/Header";
 
 const AppContainer = styled.div`
   margin-top: 5%;
@@ -9,7 +10,11 @@ const AppContainer = styled.div`
 `;
 
 function App() {
-  return <AppContainer>Hello World</AppContainer>;
+  return (
+    <AppContainer>
+      <Header />
+    </AppContainer>
+  );
 }
 
 export default App;

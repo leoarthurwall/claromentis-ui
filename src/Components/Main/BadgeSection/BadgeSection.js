@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const BadgeContainer = styled.section`
   height: 100%;
   width: 75%;
-  background-color: grey;
+  padding-right: 10px;
 `;
 const BadgeSection = () => {
   return (

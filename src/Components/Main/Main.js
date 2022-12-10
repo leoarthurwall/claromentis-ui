@@ -8,7 +8,6 @@ const MainContainer = styled.main`
   height: 100%;
   padding: 10px;
   display: flex;
-  border: 1px solid red;
   box-sizing: border-box;
 `;
 

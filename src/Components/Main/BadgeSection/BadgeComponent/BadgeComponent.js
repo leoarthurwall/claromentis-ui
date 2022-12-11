@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { HiDotsVertical } from "react-icons/hi";
 
 const BadgeContainer = styled.div`
   width: 100%;
@@ -41,6 +42,19 @@ const BadgeText = styled.h3`
   font-size: 16px;
   font-weight: 600;
 `;
+
+const OptionsContainer = styled.div`
+height: 24px;
+width: 24px;
+border-radius: 50%;
+background: rgb(210, 210, 210);
+
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+`
+
 const BadgeComponent = ({
   badgeName,
   badgeSrc,
@@ -56,6 +70,9 @@ const BadgeComponent = ({
       </UpperContainer>
       <LowerContainer>
         <BadgeText>{badgeName}</BadgeText>
+        <OptionsContainer>
+            <HiDotsVertical />
+        </OptionsContainer>
       </LowerContainer>
     </BadgeContainer>
   );

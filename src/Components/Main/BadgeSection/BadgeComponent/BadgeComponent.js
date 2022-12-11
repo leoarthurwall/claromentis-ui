@@ -25,6 +25,7 @@ const BadgeLogo = styled.img``;
 
 const BadgeIcon = styled.img`
   position: absolute;
+  width: 60px;
 `;
 const LowerContainer = styled.div`
   height: 25%;

@@ -15,9 +15,11 @@ const SortBy = () => {
   return (
     <SortByContainer>
       <Form>
-        <Label></Label>
-        <Select>
-          <Option></Option>
+        <Label for="sort">Sort by</Label>
+        <Select id="sort">
+          <Option>Alphabetical: A-Z</Option>
+          <Option>Alphabetical: Z-A</Option>
+
         </Select>
 
       </Form>

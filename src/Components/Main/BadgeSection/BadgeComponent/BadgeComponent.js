@@ -40,7 +40,7 @@ const LowerContainer = styled.div`
 `;
 const BadgeText = styled.h3`
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
 `;
 
 const OptionsContainer = styled.div`

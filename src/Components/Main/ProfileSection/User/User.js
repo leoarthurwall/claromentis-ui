@@ -11,10 +11,22 @@ const UserImage = styled.img`
   border-radius: 50%;
 `;
 
-const User = ({avatar}) => {
+const TextContainer = styled.div`
+display: flex;
+justified-content: center;
+flex-direction: column;
+`
+const Name = styled.h4``
+
+const Role = styled.h4``
+const User = ({avatar, userName, userRole}) => {
   return (
     <Container>
       <UserImage src={avatar}></UserImage>
+      <TextContainer>
+        <Name>{userName}</Name>
+        <Role>{userRole}</Role>
+      </TextContainer>
     </Container>
   );
 };

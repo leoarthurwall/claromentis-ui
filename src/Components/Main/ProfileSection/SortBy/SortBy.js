@@ -14,12 +14,14 @@ const Form = styled.form`
   gap: 10px;
 `;
 const Label = styled.label`
-font-size: 14px;
-color: #222529;`;
+  font-size: 14px;
+  color: #222529;
+`;
 const Select = styled.select`
   padding: 5px;
-  border:  1px solid rgb(210, 210, 210);
-  color: #4A5056;
+  border: 1px solid rgb(210, 210, 210);
+  color: #4a5056;
+  cursor: pointer;
 `;
 const Option = styled.option``;
 

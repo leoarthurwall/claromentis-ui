@@ -47,7 +47,7 @@ const OptionsContainer = styled.div`
 height: 24px;
 width: 24px;
 border-radius: 50%;
-background: rgb(210, 210, 210);
+background: #F8F9FA;
 
 position: relative;
 display: flex;

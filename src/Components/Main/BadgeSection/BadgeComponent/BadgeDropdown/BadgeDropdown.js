@@ -12,11 +12,21 @@ const SelectContainer = styled.select`
   display: flex;
   justify-content: center;
   align-items: center;
-  &:hover{
-    background: #E0E1E2;
+
+  appearance: none;
+  outline: 0;
+
+
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background: #e0e1e2;
   }
 `;
-const Option = styled.option``;
+const Option = styled.option`
+  background: white;
+
+`;
 
 const BadgeDropdown = () => {
   return (

@@ -12,6 +12,9 @@ const UpperContainer = styled.div`
   height: 75%;
   width: 100%;
 `;
+
+const BadgeLogo = styled.img`
+`
 const LowerContainer = styled.div`
   height: 25%;
   width: 100%;
@@ -26,10 +29,12 @@ const BadgeText = styled.h3`
   font-size: 16px;
   font-weight: 600;
 `;
-const BadgeComponent = ({ badgeName }) => {
+const BadgeComponent = ({ badgeName, badgeSrc, badgeAlt }) => {
   return (
     <BadgeContainer>
-      <UpperContainer></UpperContainer>
+      <UpperContainer>
+        <BadgeLogo src={badgeSrc} alt={badgeAlt}></BadgeLogo>
+      </UpperContainer>
       <LowerContainer>
         <BadgeText>{badgeName}</BadgeText>
       </LowerContainer>

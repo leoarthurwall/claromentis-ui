@@ -31,13 +31,22 @@ const BadgeIcon = styled.img`
   width: 60px;
 `;
 const EarnedStamp = styled.div`
- width: 60px;
- height: 25px;
+ width: auto;
+ height: 30px;
  position: absolute;
  left: 10px;
  top: 5px;
  background-color: #F4C15D;
  border-radius: 25px;
+
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 7px;
+ padding: 0 10px;
+`
+const EarnedText = styled.p`
+font-size: 12px;
 `
 const LowerContainer = styled.div`
   height: 25%;
@@ -77,7 +86,8 @@ const BadgeComponent = ({
     <BadgeContainer>
       <UpperContainer>
         <EarnedStamp>
-            <IoTrophy />
+            <IoTrophy size={12} />
+            <EarnedText>Earned</EarnedText>
         </EarnedStamp>
         <BadgeLogo src={badgeSrc} alt={badgeAlt}></BadgeLogo>
         <BadgeIcon src={iconSrc} alt={iconAlt}></BadgeIcon>

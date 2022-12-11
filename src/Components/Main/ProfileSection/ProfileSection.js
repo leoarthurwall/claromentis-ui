@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import SortBy from "./SortBy/SortBy";
 import User from "./User/User";
 
 const ProfileContainer = styled.section`
@@ -17,6 +18,7 @@ const ProfileSection = () => {
         userName={"Colin Willard"}
         userRole={"UX Engineer"}
       />
+      <SortBy />
     </ProfileContainer>
   );
 };

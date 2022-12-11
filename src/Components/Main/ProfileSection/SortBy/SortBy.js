@@ -1,11 +1,28 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
+const SortByContainer = styled.section`
+  display: flex;
+  height: auto;
+  width: 1005;
+`;
+const Form = styled.form``;
+const Label = styled.label``;
+const Select = styled.select``
+const Option = styled.option``
 
 const SortBy = () => {
   return (
-    <div>SortBy</div>
-  )
-}
+    <SortByContainer>
+      <Form>
+        <Label></Label>
+        <Select>
+          <Option></Option>
+        </Select>
 
-export default SortBy
+      </Form>
+    </SortByContainer>
+  );
+};
+
+export default SortBy;

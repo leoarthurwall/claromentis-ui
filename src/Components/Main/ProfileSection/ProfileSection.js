@@ -12,7 +12,11 @@ const ProfileContainer = styled.section`
 const ProfileSection = () => {
   return (
     <ProfileContainer>
-      <User avatar={"assets/profile.png"} userName={"Colin Willard"} userRole={"UX Engineer"}/>
+      <User
+        avatar={"assets/profile.png"}
+        userName={"Colin Willard"}
+        userRole={"UX Engineer"}
+      />
     </ProfileContainer>
   );
 };

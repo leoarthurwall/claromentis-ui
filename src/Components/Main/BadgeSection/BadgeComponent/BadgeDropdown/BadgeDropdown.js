@@ -11,9 +11,9 @@ const SelectContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${({ isDropdownOpen }) => (!isDropdownOpen ? "#f8f9fa" : "#e0e1e2")};
+  background-color: ${({ isDropdownOpen }) => (isDropdownOpen ?   "#e0e1e2" : "#f8f9fa")};
   cursor: pointer;
-
+  box-shadow: ${({ isDropdownOpen }) => (isDropdownOpen ? "0 0 3px 3px  #EBECED" : "null")};
 `;
 
 const OptionsContainer = styled.div`
@@ -21,7 +21,7 @@ const OptionsContainer = styled.div`
   height: auto;
   width: auto;
   position: absolute;
-  top: 24px;
+  top: 27px;
   left: 0px;
   border: 1px solid rgb(210, 210, 210);
   border-radius: 5px;

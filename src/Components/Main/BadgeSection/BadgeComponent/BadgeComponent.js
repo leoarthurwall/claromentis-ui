@@ -15,12 +15,17 @@ const UpperContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px;
+  padding: 10px;
+  box-sizing: border-box;
 
+  position: relative;
 `;
 
-const BadgeLogo = styled.img`
-`
+const BadgeLogo = styled.img``;
+
+const BadgeIcon = styled.img`
+  position: absolute;
+`;
 const LowerContainer = styled.div`
   height: 25%;
   width: 100%;
@@ -35,11 +40,18 @@ const BadgeText = styled.h3`
   font-size: 16px;
   font-weight: 600;
 `;
-const BadgeComponent = ({ badgeName, badgeSrc, badgeAlt }) => {
+const BadgeComponent = ({
+  badgeName,
+  badgeSrc,
+  badgeAlt,
+  iconSrc,
+  iconAlt,
+}) => {
   return (
     <BadgeContainer>
       <UpperContainer>
         <BadgeLogo src={badgeSrc} alt={badgeAlt}></BadgeLogo>
+        <BadgeIcon src={iconSrc} alt={iconAlt}></BadgeIcon>
       </UpperContainer>
       <LowerContainer>
         <BadgeText>{badgeName}</BadgeText>

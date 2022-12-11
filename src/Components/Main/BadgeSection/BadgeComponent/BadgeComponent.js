@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { HiDotsVertical } from "react-icons/hi";
 import { IoTrophy } from "react-icons/io5";
+import BadgeDropdown from "./BadgeDropdown/BadgeDropdown";
 
 const BadgeContainer = styled.div`
   width: 100%;
@@ -97,9 +98,7 @@ const BadgeComponent = ({
       </UpperContainer>
       <LowerContainer>
         <BadgeText>{badgeName}</BadgeText>
-        <OptionsContainer>
-          <HiDotsVertical />
-        </OptionsContainer>
+       <BadgeDropdown />
       </LowerContainer>
     </BadgeContainer>
   );

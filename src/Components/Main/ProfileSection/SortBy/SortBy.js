@@ -22,6 +22,8 @@ const Select = styled.select`
   border: 1px solid rgb(210, 210, 210);
   color: #4a5056;
   cursor: pointer;
+
+
 `;
 const Option = styled.option``;
 

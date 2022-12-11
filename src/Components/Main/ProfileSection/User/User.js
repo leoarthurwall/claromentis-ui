@@ -29,7 +29,7 @@ const Name = styled.h4`
 
 const Role = styled.h4`
   margin: 0;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 12px;
   color: #6e757c;
 `;

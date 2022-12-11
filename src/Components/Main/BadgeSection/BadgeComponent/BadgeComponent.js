@@ -11,6 +11,12 @@ const BadgeContainer = styled.div`
 const UpperContainer = styled.div`
   height: 75%;
   width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+
 `;
 
 const BadgeLogo = styled.img`

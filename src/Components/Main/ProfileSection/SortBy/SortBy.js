@@ -23,9 +23,6 @@ const Select = styled.select`
   color: #4a5056;
   cursor: pointer;
   outline: 0;
-
-
-
 `;
 const Option = styled.option``;
 

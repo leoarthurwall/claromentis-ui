@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { HiDotsVertical } from "react-icons/hi";
 import { IoTrophy } from "react-icons/io5";
 
-
 const BadgeContainer = styled.div`
   width: 100%;
   height: 100%;
@@ -31,23 +30,23 @@ const BadgeIcon = styled.img`
   width: 60px;
 `;
 const EarnedStamp = styled.div`
- width: auto;
- height: 30px;
- position: absolute;
- left: 10px;
- top: 5px;
- background-color: #F4C15D;
- border-radius: 25px;
+  width: auto;
+  height: 30px;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  background-color: #f4c15d;
+  border-radius: 25px;
 
- display: flex;
- align-items: center;
- justify-content: center;
- gap: 7px;
- padding: 0 10px;
-`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 0 10px;
+`;
 const EarnedText = styled.p`
-font-size: 12px;
-`
+  font-size: 12px;
+`;
 const LowerContainer = styled.div`
   height: 25%;
   width: 100%;
@@ -64,16 +63,16 @@ const BadgeText = styled.h3`
 `;
 
 const OptionsContainer = styled.div`
-height: 24px;
-width: 24px;
-border-radius: 50%;
-background: #F8F9FA;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background: #f8f9fa;
 
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
-`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 const BadgeComponent = ({
   badgeName,
@@ -81,21 +80,25 @@ const BadgeComponent = ({
   badgeAlt,
   iconSrc,
   iconAlt,
+  value,
 }) => {
   return (
     <BadgeContainer>
       <UpperContainer>
-        <EarnedStamp>
+        {value ? (
+          <EarnedStamp>
             <IoTrophy size={12} />
             <EarnedText>Earned</EarnedText>
-        </EarnedStamp>
+          </EarnedStamp>
+        ) : null}
+
         <BadgeLogo src={badgeSrc} alt={badgeAlt}></BadgeLogo>
         <BadgeIcon src={iconSrc} alt={iconAlt}></BadgeIcon>
       </UpperContainer>
       <LowerContainer>
         <BadgeText>{badgeName}</BadgeText>
         <OptionsContainer>
-            <HiDotsVertical />
+          <HiDotsVertical />
         </OptionsContainer>
       </LowerContainer>
     </BadgeContainer>

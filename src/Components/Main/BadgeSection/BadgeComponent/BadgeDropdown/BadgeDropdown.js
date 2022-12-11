@@ -1,4 +1,4 @@
-import React from "react";
+import {useState} from "react";
 import styled from "styled-components";
 import { HiDotsVertical } from "react-icons/hi";
 
@@ -20,8 +20,14 @@ const SelectContainer = styled.div`
 `;
 
 const BadgeDropdown = () => {
+   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+
+   const handleDropdownClick = () => {
+        setIsDropdownOpen(!isDropdownOpen)
+   }
   return (
-    <SelectContainer>
+
+    <SelectContainer onClick={handleDropdownClick}>
       <HiDotsVertical />
     </SelectContainer>
   );

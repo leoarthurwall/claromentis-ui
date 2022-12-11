@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { HiDotsVertical } from "react-icons/hi";
+import { IoTrophy } from "react-icons/io5";
+
 
 const BadgeContainer = styled.div`
   width: 100%;
@@ -28,6 +30,15 @@ const BadgeIcon = styled.img`
   position: absolute;
   width: 60px;
 `;
+const EarnedStamp = styled.div`
+ width: 60px;
+ height: 25px;
+ position: absolute;
+ left: 10px;
+ top: 5px;
+ background-color: #F4C15D;
+ border-radius: 25px;
+`
 const LowerContainer = styled.div`
   height: 25%;
   width: 100%;
@@ -65,6 +76,9 @@ const BadgeComponent = ({
   return (
     <BadgeContainer>
       <UpperContainer>
+        <EarnedStamp>
+            <IoTrophy />
+        </EarnedStamp>
         <BadgeLogo src={badgeSrc} alt={badgeAlt}></BadgeLogo>
         <BadgeIcon src={iconSrc} alt={iconAlt}></BadgeIcon>
       </UpperContainer>

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import User from './User/User';
 
 const ProfileContainer = styled.section`
   height: auto;
@@ -11,7 +12,9 @@ const ProfileContainer = styled.section`
 
 const ProfileSection = () => {
   return (
-    <ProfileContainer>profile</ProfileContainer>
+    <ProfileContainer>
+    <User avatar={"assets/profile.png"}/> 
+    </ProfileContainer>
 
   )
 }

@@ -31,7 +31,25 @@ Don't worry if it's not fully complete by the end, we don't expect a pixel perfe
 
 Here is the result of the Front End build. To complete this, I used React.js and Styled Components. This enabled me to build reusable components whilst using minimal code.
 
+![Desktop](public/images/desktop.png)
+
 The build is closely matched to the design spec and is responsive from mobile through to desktop.
+
+Making it responsive to other device sizes, I set the layout to what I thougth worked best.
+
+![Laptop](public/images/laptop.png)
+
+As the width decreases to a natural breakpoint, I would simply lay out the component so displays with less columns.
+
+![tablet](public/images/tablet.png)
+
+With the mobile being only 1 column, I set the custom dropdown to display inward rather than outward. This was to ensure it didn't go out of the app container. 
+
+Furthermore, the width at mobile size was responsive, so the trophy badge text was removed so it didn't overlap the main badge - maintaining a clean UI.
+
+![mobile](public/images/mobile.png)
+
+
 
 ## DEPLOYED SITE
 

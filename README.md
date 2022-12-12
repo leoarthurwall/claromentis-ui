@@ -1,4 +1,4 @@
-## Junior Front End Code Task
+# Junior Front End Code Task
 
 ### - NOTE: Scroll down for completed task documantation
 
@@ -27,13 +27,19 @@ Don't worry if it's not fully complete by the end, we don't expect a pixel perfe
 <img src="./assets/examples/dropdown-example.gif" width="600">
 
 
-## COMPLETED TASK
+# COMPLETED TASK
 
 Here is the result of the Front End build. To complete this, I used React.js and Styled Components. This enabled me to build reusable components whilst using minimal code.
 
 The build is closely matched to the design spec and is responsive from mobile through to desktop.
 
-### Main Challenge
+### DEPLOYED SITE
+
+Here's a link to the deployed site. Check it out if you have a chance!
+
+[Deployed Site](https://craromentislw.netlify.app/)
+
+### MAIN CHALLENGE
 
 The main challenge was to make the dropdown menu (Edit, Delete) for the badge component. 
 
@@ -43,7 +49,7 @@ To get around this, I built a custom dropdown menu. This enabled me to build it 
 
 With this came a new challenge, which was the off dropdown mouse click to close the dropdown. The quickest solution for this was to implement a transparent overlay  covering the screen, that is "visible" when the dropdown is opened, and when clicked triggers the dropdown state to close. This enabled a click anywhere outside of the dropdown to close it.
 
-### Lighthouse Score
+### LIGHTHOUSE SCORE
 
 Once the project was finished I ran a lighthouse test. It received the following scores:
 

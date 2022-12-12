@@ -7,7 +7,6 @@ const AppContainer = styled.div`
   height: auto;
   width: 80vw;
   background-color: white;
-  border: 2px solid blue;
 
   display: flex;
   flex-direction: column;

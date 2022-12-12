@@ -12,7 +12,6 @@ const HeaderContainer = styled.header`
   justify-content: space-between;
 
   box-sizing: border-box;
-
 `;
 
 const HeaderText = styled.div`
@@ -24,15 +23,15 @@ const IconContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 15px;
-`
+`;
 
 const Header = () => {
   return (
     <HeaderContainer>
       <HeaderText>Badges</HeaderText>
       <IconContainer>
-        <HiOutlinePlusCircle size={24}/>
-        <HiOutlineCog6Tooth size={24}/>
+        <HiOutlinePlusCircle size={24} style={{ cursor: "pointer" }} />
+        <HiOutlineCog6Tooth size={24} style={{ cursor: "pointer" }} />
       </IconContainer>
     </HeaderContainer>
   );

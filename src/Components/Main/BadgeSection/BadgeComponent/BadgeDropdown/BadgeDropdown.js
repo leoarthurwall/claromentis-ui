@@ -56,7 +56,7 @@ const OptionsOverlay = styled.div`
   left: 0;
   right: 0;
   z-index: 5;
-  visibility: ${({ isDropdownOpen }) => !isDropdownOpen && "hidden" };
+  visibility: ${({ isDropdownOpen }) => !isDropdownOpen && "hidden"};
 `;
 
 const BadgeDropdown = () => {
@@ -81,7 +81,10 @@ const BadgeDropdown = () => {
           </OptionsContainer>
         ) : null}
       </SelectContainer>
-      <OptionsOverlay isDropdownOpen={isDropdownOpen} onClick={handleDropdownClick}/>
+      <OptionsOverlay
+        isDropdownOpen={isDropdownOpen}
+        onClick={handleDropdownClick}
+      />
     </>
   );
 };

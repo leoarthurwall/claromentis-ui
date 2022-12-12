@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { HiDotsVertical } from "react-icons/hi";
 import { IoTrophy } from "react-icons/io5";
 import BadgeDropdown from "./BadgeDropdown/BadgeDropdown";
 
@@ -63,18 +62,6 @@ const BadgeText = styled.h3`
   font-weight: 500;
 `;
 
-const OptionsContainer = styled.div`
-  height: 24px;
-  width: 24px;
-  border-radius: 50%;
-  background: #f8f9fa;
-
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
 const BadgeComponent = ({
   badgeName,
   badgeSrc,
@@ -98,7 +85,7 @@ const BadgeComponent = ({
       </UpperContainer>
       <LowerContainer>
         <BadgeText>{badgeName}</BadgeText>
-       <BadgeDropdown />
+        <BadgeDropdown />
       </LowerContainer>
     </BadgeContainer>
   );

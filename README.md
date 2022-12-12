@@ -1,6 +1,6 @@
 # Junior Front End Code Task
 
-## - NOTE: Scroll down for completed task documantation
+## - NOTE: Scroll down for completed task documantation and link to deployed site.
 
 The goal of this task is to implement the example of a page in the screen capture ([fig.1](#example---fig1)) as closely as you can using any tools/frameworks you choose, code the dropdown menu interaction using JavaScript (as shown in the screen capture - [fig.2](#dropdown-example---fig2)).
 

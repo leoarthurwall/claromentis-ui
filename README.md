@@ -54,7 +54,7 @@ To get around this, I built a custom dropdown menu. This enabled me to build it 
 
 ![custom dropdown menu](public/images/customDropdown.png)
 
-With this came a new challenge, which was the off dropdown mouse click to close the dropdown. The quickest solution for this was to implement a transparent overlay  covering the screen, that is "visible" when the dropdown is opened, and when clicked triggers the dropdown state to close. This enabled a click anywhere outside of the dropdown to close it.
+With this came a new challenge, which was the off dropdown mouse click to close the dropdown. The quickest solution for this was to implement a transparent overlay  covering the screen, that is "visible" when the dropdown is opened, and when clicked triggers the dropdown state to closed (false). This enabled a click anywhere outside of the dropdown to close it.
 
 ## LIGHTHOUSE SCORE
 

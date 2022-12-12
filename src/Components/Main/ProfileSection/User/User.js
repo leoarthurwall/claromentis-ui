@@ -33,10 +33,10 @@ const Role = styled.h4`
   font-size: 12px;
   color: #6e757c;
 `;
-const User = ({ avatar, userName, userRole }) => {
+const User = ({ src, alt, userName, userRole }) => {
   return (
     <Container>
-      <UserImage src={avatar}></UserImage>
+      <UserImage src={src} alt={alt}></UserImage>
       <TextContainer>
         <Name>{userName}</Name>
         <Role>{userRole}</Role>

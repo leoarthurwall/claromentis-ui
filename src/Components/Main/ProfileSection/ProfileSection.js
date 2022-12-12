@@ -24,7 +24,8 @@ const ProfileSection = () => {
   return (
     <ProfileContainer>
       <User
-        avatar={"assets/profile.png"}
+        src={"assets/profile.png"}
+        alt={"Profile Photo"}
         userName={"Colin Willard"}
         userRole={"UX Engineer"}
       />

@@ -15,6 +15,9 @@ const BadgeContainer = styled.section`
   @media (max-width: 1280px) {
     grid-template-columns: 1fr 1fr;
   }
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr ;
+  }
 `;
 
 const BadgeSection = () => {

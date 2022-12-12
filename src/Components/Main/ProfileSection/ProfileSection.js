@@ -9,6 +9,11 @@ const ProfileContainer = styled.section`
   width: 260px;
   padding-left: 10px;
   border-left: 1px solid rgb(210, 210, 210);
+
+  @media (max-width: 700px) {
+    border-left: none;
+    padding-left: 0;
+  }
 `;
 
 const ProfileSection = () => {

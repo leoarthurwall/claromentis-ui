@@ -11,6 +11,10 @@ const AppContainer = styled.div`
 
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 1280px) {
+    margin-bottom: 150px;
+  }
 `;
 
 function App() {

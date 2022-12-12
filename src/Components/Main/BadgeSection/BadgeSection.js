@@ -4,9 +4,8 @@ import BadgeComponent from "./BadgeComponent/BadgeComponent";
 const BadgeContainer = styled.section`
   height: 100%;
   width: auto;
-
+  padding-bottom: 35px;
   padding-right: 15px;
-
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-row-gap: 15px;

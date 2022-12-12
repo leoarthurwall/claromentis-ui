@@ -50,6 +50,9 @@ const EarnedStamp = styled.div`
 `;
 const EarnedText = styled.p`
   font-size: 12px;
+  @media (max-width: 350px) {
+    display: none;
+  }
 `;
 const LowerContainer = styled.div`
   height: 25%;

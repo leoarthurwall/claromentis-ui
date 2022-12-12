@@ -17,7 +17,6 @@ const ProfileContainer = styled.section`
   @media (max-width: 350px) {
     width: 75vw;
     min-width: 210px;
-
   }
 `;
 

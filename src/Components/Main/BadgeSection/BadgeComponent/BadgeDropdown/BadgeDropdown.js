@@ -13,9 +13,13 @@ const SelectContainer = styled.div`
   align-items: center;
   background-color: ${({ isDropdownOpen }) =>
     isDropdownOpen ? "#e0e1e2" : "#f8f9fa"};
-  cursor: pointer;
   box-shadow: ${({ isDropdownOpen }) =>
     isDropdownOpen ? "0 0 3px 3px  #EBECED" : "null"};
+  transition:0.2s;
+  &:hover {
+    background-color: #e0e1e2;
+  }
+  cursor: pointer;
 `;
 
 const OptionsContainer = styled.div`

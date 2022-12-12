@@ -10,7 +10,7 @@ const ProfileContainer = styled.section`
   padding-left: 10px;
   border-left: 1px solid rgb(210, 210, 210);
 
-  @media (max-width: 700px) {
+  @media (max-width: 1000px) {
     border-left: none;
     padding-left: 0;
   }

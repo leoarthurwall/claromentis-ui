@@ -10,9 +10,11 @@ const MainContainer = styled.main`
   display: flex;
   box-sizing: border-box;
 
-  @media (max-width: 700px) {
+  @media (max-width: 1000px) {
     flex-direction: column-reverse;
     gap: 50px;
+    padding: 10px;
+
   }
 `;
 

@@ -4,25 +4,23 @@ import BadgeComponent from "./BadgeComponent/BadgeComponent";
 const BadgeContainer = styled.section`
   height: 100%;
   width: auto;
-  
+
   padding-right: 10px;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1vw;
 
-  @media(max-width: 1280px){
+  @media (max-width: 1280px) {
     grid-template-columns: 1fr 1fr;
-
   }
 `;
 
 const BadgeSection = () => {
-
   return (
     <BadgeContainer>
       <BadgeComponent
-        badgeName={"Sales Superstar"} 
+        badgeName={"Sales Superstar"}
         badgeSrc={"assets/badge-bg/badge-1.svg"}
         badgeAlt={"red badge icon"}
         iconSrc={"assets/badge-icons/podium.svg"}
@@ -36,7 +34,6 @@ const BadgeSection = () => {
         iconSrc={"assets/badge-icons/target.svg"}
         iconAlt={"target"}
         value={false}
-
       />
       <BadgeComponent
         badgeName={"Creative Thinker"}
@@ -45,7 +42,6 @@ const BadgeSection = () => {
         iconSrc={"assets/badge-icons/flag.svg"}
         iconAlt={"flag"}
         value={false}
-
       />
       <BadgeComponent
         badgeName={"Content Crafter"}

@@ -6,6 +6,7 @@ import User from "./User/User";
 const ProfileContainer = styled.section`
   height: auto;
   width: 25%;
+  width: 260px;
   padding-left: 10px;
   border-left: 1px solid rgb(210, 210, 210);
 `;

@@ -6,7 +6,7 @@ const HeaderContainer = styled.header`
   height: 50px;
   width: 100%;
   border-bottom: 1px solid rgb(210, 210, 210);
-  padding: 0 10px;
+  padding: 0 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -7,7 +7,7 @@ const ProfileContainer = styled.section`
   height: auto;
   width: 25%;
   width: 260px;
-  padding-left: 10px;
+  padding-left: 15px;
   border-left: 1px solid rgb(210, 210, 210);
 
   @media (max-width: 1000px) {

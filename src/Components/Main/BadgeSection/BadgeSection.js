@@ -5,7 +5,7 @@ const BadgeContainer = styled.section`
   height: 100%;
   width: auto;
 
-  padding-right: 10px;
+  padding-right: 15px;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

@@ -14,6 +14,11 @@ const ProfileContainer = styled.section`
     border-left: none;
     padding-left: 0;
   }
+  @media (max-width: 350px) {
+    width: 75vw;
+    min-width: 210px;
+
+  }
 `;
 
 const ProfileSection = () => {

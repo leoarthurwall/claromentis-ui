@@ -8,6 +8,10 @@ const BadgeContainer = styled.div`
   height: 100%;
   max-height: 250px;
   border: 1px solid rgb(210, 210, 210);
+  @media (max-width: 350px) {
+    width: 75vw;
+    min-width: 210px;
+  }
 `;
 
 const UpperContainer = styled.div`

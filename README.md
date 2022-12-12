@@ -1,6 +1,6 @@
 # Junior Front End Code Task
 
-### - NOTE: Scroll down for completed task documantation
+## - NOTE: Scroll down for completed task documantation
 
 The goal of this task is to implement the example of a page in the screen capture ([fig.1](#example---fig1)) as closely as you can using any tools/frameworks you choose, code the dropdown menu interaction using JavaScript (as shown in the screen capture - [fig.2](#dropdown-example---fig2)).
 
@@ -33,13 +33,13 @@ Here is the result of the Front End build. To complete this, I used React.js and
 
 The build is closely matched to the design spec and is responsive from mobile through to desktop.
 
-### DEPLOYED SITE
+## DEPLOYED SITE
 
 Here's a link to the deployed site. Check it out if you have a chance!
 
 [Deployed Site](https://craromentislw.netlify.app/)
 
-### MAIN CHALLENGE
+## MAIN CHALLENGE
 
 The main challenge was to make the dropdown menu (Edit, Delete) for the badge component. 
 
@@ -49,11 +49,16 @@ To get around this, I built a custom dropdown menu. This enabled me to build it 
 
 With this came a new challenge, which was the off dropdown mouse click to close the dropdown. The quickest solution for this was to implement a transparent overlay  covering the screen, that is "visible" when the dropdown is opened, and when clicked triggers the dropdown state to close. This enabled a click anywhere outside of the dropdown to close it.
 
-### LIGHTHOUSE SCORE
+## LIGHTHOUSE SCORE
 
 Once the project was finished I ran a lighthouse test. It received the following scores:
 
+![SEO score first lighthouse test](public/images/seo.png)
+![accessibility score first lighthouse test](public/images/accessibility.png)
+
 A quick win for accessibility and SEO optimisation was to add an Alt tag for the profile image. I went back and passed it in and then ran the lighthouse test again and received the following score:
+
+![second lighthouse test](public/images/secondScore.png)
 
 
 

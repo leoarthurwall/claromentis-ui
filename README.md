@@ -45,7 +45,14 @@ The main challenge was to make the dropdown menu (Edit, Delete) for the badge co
 
 Initially I tried using the html select element, which is designed for this job. However, if found that styling the options was particuarly challenging. 
 
+NOTE - I set the profile dropdown using the default select element for style comparison:
+
+![default dropdown menu](public/images/defaultDropdown.png)
+
+
 To get around this, I built a custom dropdown menu. This enabled me to build it to the design spec. 
+
+![custom dropdown menu](public/images/customDropdown.png)
 
 With this came a new challenge, which was the off dropdown mouse click to close the dropdown. The quickest solution for this was to implement a transparent overlay  covering the screen, that is "visible" when the dropdown is opened, and when clicked triggers the dropdown state to close. This enabled a click anywhere outside of the dropdown to close it.
 

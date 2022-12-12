@@ -1,15 +1,20 @@
-import { useState } from "react";
 import styled from "styled-components";
 import BadgeComponent from "./BadgeComponent/BadgeComponent";
 
 const BadgeContainer = styled.section`
   height: 100%;
-  width: 75%;
+  width: auto;
+  
   padding-right: 10px;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1vw;
+
+  @media(max-width: 1280px){
+    grid-template-columns: 1fr 1fr;
+
+  }
 `;
 
 const BadgeSection = () => {

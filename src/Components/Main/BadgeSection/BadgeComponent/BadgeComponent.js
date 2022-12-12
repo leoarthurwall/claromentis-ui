@@ -4,7 +4,7 @@ import { IoTrophy } from "react-icons/io5";
 import BadgeDropdown from "./BadgeDropdown/BadgeDropdown";
 
 const BadgeContainer = styled.div`
-  width: 100%;
+  width: 260px;
   height: 100%;
   max-height: 250px;
   border: 1px solid rgb(210, 210, 210);
@@ -56,6 +56,7 @@ const LowerContainer = styled.div`
   align-items: center;
   padding: 0 10px;
   box-sizing: border-box;
+
 `;
 const BadgeText = styled.h3`
   font-size: 16px;

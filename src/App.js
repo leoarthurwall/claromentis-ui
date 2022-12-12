@@ -5,7 +5,8 @@ import Main from "./Components/Main/Main";
 const AppContainer = styled.div`
   margin-top: 5%;
   height: auto;
-  width: 80vw;
+
+  width: 1150px;
   background-color: white;
 
   display: flex;

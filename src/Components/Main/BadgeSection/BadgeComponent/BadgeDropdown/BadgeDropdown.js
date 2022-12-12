@@ -15,7 +15,7 @@ const SelectContainer = styled.div`
     isDropdownOpen ? "#e0e1e2" : "#f8f9fa"};
   box-shadow: ${({ isDropdownOpen }) =>
     isDropdownOpen ? "0 0 3px 3px  #EBECED" : "null"};
-  transition:0.2s;
+  transition: 0.2s;
   &:hover {
     background-color: #e0e1e2;
   }

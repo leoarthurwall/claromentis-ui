@@ -11,9 +11,11 @@ const SelectContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${({ isDropdownOpen }) => (isDropdownOpen ?   "#e0e1e2" : "#f8f9fa")};
+  background-color: ${({ isDropdownOpen }) =>
+    isDropdownOpen ? "#e0e1e2" : "#f8f9fa"};
   cursor: pointer;
-  box-shadow: ${({ isDropdownOpen }) => (isDropdownOpen ? "0 0 3px 3px  #EBECED" : "null")};
+  box-shadow: ${({ isDropdownOpen }) =>
+    isDropdownOpen ? "0 0 3px 3px  #EBECED" : "null"};
 `;
 
 const OptionsContainer = styled.div`
@@ -35,15 +37,26 @@ const UL = styled.ul`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
   padding: 10px 0;
 `;
 const LI = styled.li`
-padding: 8px 90px 8px 10px;
+  padding: 8px 90px 8px 10px;
 
-&:hover{
+  &:hover {
     background: #e0e1e2;
-}
+  }
+`;
+
+const OptionsOverlay = styled.div`
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  visibility: ${({ isDropdownOpen }) => !isDropdownOpen && "hidden" };
 `;
 
 const BadgeDropdown = () => {
@@ -54,7 +67,10 @@ const BadgeDropdown = () => {
   };
   return (
     <>
-      <SelectContainer onClick={handleDropdownClick} isDropdownOpen={isDropdownOpen}>
+      <SelectContainer
+        onClick={handleDropdownClick}
+        isDropdownOpen={isDropdownOpen}
+      >
         <HiDotsVertical />
         {isDropdownOpen ? (
           <OptionsContainer>
@@ -65,6 +81,7 @@ const BadgeDropdown = () => {
           </OptionsContainer>
         ) : null}
       </SelectContainer>
+      <OptionsOverlay isDropdownOpen={isDropdownOpen} onClick={handleDropdownClick}/>
     </>
   );
 };

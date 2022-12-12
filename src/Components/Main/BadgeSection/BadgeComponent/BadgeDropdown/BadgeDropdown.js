@@ -32,6 +32,9 @@ const OptionsContainer = styled.div`
   border: 1px solid rgb(210, 210, 210);
   border-radius: 5px;
   z-index: 10;
+  @media (max-width: 700px) {
+    left: -124px;
+  }
 `;
 
 const UL = styled.ul`
